@@ -1,42 +1,155 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+
+@font-face {
+  font-family: Eiko;
+  src: url(fonts/PP\ Eiko-Free\ For\ Personal\ Use\ v2.0/PPEiko-Thin.otf);
+}
+@font-face {
+  font-family: Gunsan;
+  src: url(fonts/Gunsan.ttf);
+}
+@font-face {
+  font-family: Cormorant;
+  src: url(fonts/Cormorant/Cormorant-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Bigilla;
+  src: url(fonts/Bigilla.otf);
+}
+@font-face {
+  font-family: Krylon;
+  src: url(fonts/Krylon-Regular.otf);
+}
+@font-face {
+  font-family: Legquinne;
+  src: url(fonts/Legquinne-Light.otf);
+}
+@font-face {
+  font-family: Editorial;
+  src: url(fonts/PPEditorial/otf/PPEditorialOld-Ultralight.otf);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@theme {
+  --font-eiko: "Eiko", "sans-serif";
+  --font-gunsan: "Gunsan", "sans-serif";
+  --font-cormorant: "Cormorant", "sans-serif";
+  --font-bigilla: "Bigilla", "sans-serif";
+  --font-krylon: "Krylon", "sans-serif";
+  --font-legquinne: "Legquinne", "sans-serif";
+  --font-editorial: "Editorial", "sans-serif";
+  --breakpoint-3xl: 125rem;
+  --color-beige: #f6ebde;
+  --color-coldbeige: #f7f1eb;
+  /* --color-warm: #fcf7e8; */
+  --color-warm: #fcf6ec;
+  --color-white2: #f8f6ef;
+  --color-blu: #4f6f87;
+  --color-green: #adc89f;
+  --color-shallow: #000000cb;
+}
+
+
+
+@layer base {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    overflow-x: hidden;
+    background-color: #fcf6ec;
+  }
+
+  /* custom sizes */
+  /* end of custom sizes */
+
+  /* Custom easings */
+  /* End of custom easings */
+
+  .hover1:hover .hover1-go {
+    @apply -translate-y-[90%];
+  }
+  .hover1-go {
+    @apply transition-all duration-500 ease-[cubic-bezier(0.31,0.22,0,0.99)];
+  }
+  .hover2:hover .hover2-go {
+    @apply -translate-y-[100%];
+  }
+  .hover2-go {
+    @apply transition-all duration-500 ease-[cubic-bezier(0.31,0.22,0,0.99)];
+  }
+
+
+
+  /* .button1:hover {
+    @apply scale-105 bg-amber-300;
+  } */
+
+  .dot::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 12;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    transition: all 0.15s;
+  }
+  .hover1:hover .dot::before {
+    @apply bg-transparent;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+/* animations */
+.button1 {
+  @apply ease-[cubic-bezier(0.31,0.22,0,0.99)] transition-all duration-300 will-change-transform;
+  @apply hover:scale-[1.07]
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* two titles effect */
+.hover3:hover .hover3-go {
+  @apply scale-95 opacity-0;
+}
+.hover3:hover .hover3-go2 {
+  @apply blur-none opacity-100;
+}
+.hover3-go {
+  @apply transition-all duration-300 ease-in-out;
+}
+.hover3-go2 {
+  @apply transition-all duration-500 ease-in-out;
+}
+.hover-blur {
+  @apply transition-all duration-300 ease-in-out;
+}
+.hover3:hover .hover-blur {
+  @apply opacity-0;
+}
+.hover3:hover .translate-left {
+  @apply -translate-x-[0.9rem];
+}
+.translate-left {
+  @apply transition-all duration-[0.4s] ease-in-out;
+}
+.hover4 {
+  @apply transition-all ease-in-out duration-300;
+  @apply hover:scale-[0.99];
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.left-dot::before {
+  content: '';
+  display: block;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-shallow);
+  transition: all 0.15s;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.ease1 {
+  @apply ease-[cubic-bezier(0.31,0.22,0,0.99)];
 }
