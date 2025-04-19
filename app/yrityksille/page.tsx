@@ -52,12 +52,12 @@ export default function Yrityksille() {
         </div> */}
         <div className="w-full h-auto 2xl:h-screen pb-12 pt-24 2xl:py-0 bg-warm flex relative flex-col justify-center items-center gap-8">
             <div className="flex flex-wrap items-center justify-center font-medium gap-6 mx-2">
-                <Link href={'contact'} className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
+                <Link href={'/contact'} className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
                 border-[#7e7e7e93] rounded-3xl overflow-hidden hover3 hover4 hover:border-[#000000b2]">
                     <div className="font-bold text-lg uppercase text-center">
                         <p>Economy paketti 2h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">375€ + ALV 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">375€ + ALV 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -72,7 +72,7 @@ export default function Yrityksille() {
                             <p className="ml-4">Purku, tee/pientä naposteltevaa 30min</p>
                         </div>
                         <div className="flex items-center justify-center mt-13">
-                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-green text-warm rounded-xl">
+                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-black text-warm rounded-xl">
                                 <p className="relative translate-left w-[8rem]">OTA YHTEYTTÄ</p>
                                 <p className="absolute right-[24%] opacity-0 blur-lg hover3-go2">
                                     <MoveRight size={'28px'}/>
@@ -81,12 +81,12 @@ export default function Yrityksille() {
                         </div>
                     </div>
                 </Link>
-                <Link href={'contact'} className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
+                <Link href={'/contact'} className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
                 border-[#7e7e7e93] rounded-3xl overflow-hidden hover3 hover4 hover:border-[#000000b2]">
                     <div className="font-bold text-lg uppercase text-center">
                         <p>Business paketti 2h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">457€ + alv 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">457€ + alv 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -105,7 +105,7 @@ export default function Yrityksille() {
                             <p className="ml-4">Purku, tee/pientä naposteltavaa 30min</p>
                         </div>
                         <div className="flex items-center justify-center mt-4">
-                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-green text-warm rounded-xl">
+                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-black text-warm rounded-xl">
                                 <p className="relative translate-left w-[8rem]">OTA YHTEYTTÄ</p>
                                 <p className="absolute right-[24%] opacity-0 blur-lg hover3-go2">
                                     <MoveRight size={'28px'}/>
@@ -114,12 +114,12 @@ export default function Yrityksille() {
                         </div>
                     </div>
                 </Link>
-                <Link href={'contact'}className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
+                <Link href={'/contact'}className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
                 border-[#7e7e7e93] rounded-3xl overflow-hidden hover3 hover4 hover:border-[#000000b2]">
                     <div className="font-bold text-lg text-center uppercase">
                         <p>First-class paketti 2,5h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">487€ + alv 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">487€ + alv 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -134,7 +134,7 @@ export default function Yrityksille() {
                             <p className="ml-4">Unelmakartan teko, tee/pientä naposteltavaa 60min</p>
                         </div>
                         <div className="flex items-center justify-center mt-9">
-                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-green text-warm rounded-xl">
+                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-black text-warm rounded-xl">
                                 <p className="relative translate-left w-[8rem]">OTA YHTEYTTÄ</p>
                                 <p className="absolute right-[24%] opacity-0 blur-lg hover3-go2">
                                     <MoveRight size={'28px'}/>
@@ -143,12 +143,12 @@ export default function Yrityksille() {
                         </div>
                     </div>
                 </Link>
-                <Link href={'contact'}className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
+                <Link href={'/contact'}className="relative flex items-center flex-col gap-2 w-[20rem] h-[24rem] p-6 border-2
                 border-[#7e7e7e93] rounded-3xl overflow-hidden hover3 hover4 hover:border-[#000000b2]">
                     <div className="font-bold text-lg text-center uppercase">
                         <p>Fasten your seatbelt 15min</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">KYSY HINTAA</p>
+                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">KYSY HINTAA</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -163,7 +163,7 @@ export default function Yrityksille() {
                         </div>
 
                         <div className="flex items-center justify-center mt-2">
-                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-green text-warm rounded-xl">
+                            <div className="flex items-center justify-center px-18 py-2 font-black text bg-black text-warm rounded-xl">
                                 <p className="relative translate-left w-[8rem]">OTA YHTEYTTÄ</p>
                                 <p className="absolute right-[24%] opacity-0 blur-lg hover3-go2">
                                     <MoveRight size={'28px'}/>
