@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/images/logo.png"
+import logo from "@/public/images/logo copy Medium.png";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
@@ -61,7 +61,7 @@ export default function Header() {
             </div>
           </Link>
           <div className="w-0.5 h-5 bg-warm"></div>
-          <Link href={'contact'} className="hover1 flex items-center justify-center px-2 py-6 cursor-pointer">
+          <Link href={'/contact'} className="hover1 flex items-center justify-center px-2 py-6 cursor-pointer">
             <div className={`${pathname === '/contact' ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[94%]">YHTEYSTIEDOT</p>
@@ -70,7 +70,7 @@ export default function Header() {
             </div>
           </Link>
           <div className="w-0.5 h-5 bg-warm"></div>
-          <Link href={'yrityksille'} className="hover1 flex items-center justify-center pl-2 pr-8 py-6 cursor-pointer">
+          <Link href={'/yrityksille'} className="hover1 flex items-center justify-center pl-2 pr-8 py-6 cursor-pointer">
             <div className={`${pathname === '/yrityksille' ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[90%]">YRITYKSILLE</p>
