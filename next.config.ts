@@ -7,15 +7,6 @@ const nextConfig: NextConfig = {
   images: {
       unoptimized: true
   },
-  async redirects() {
-    return [
-      {
-        source: '/booking',
-        destination: '/',
-        permanent: true, // use `true` for 308 redirect (SEO-friendly)
-      },
-    ];
-  },
 };
 
 export default nextConfig;
