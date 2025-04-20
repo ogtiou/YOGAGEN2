@@ -9,7 +9,8 @@ import Menu from "../menu/menu";
 
 export default function Header() {
 
-  const pathname = usePathname()
+  // const pathname = usePathname()
+  const pathname = usePathname() ?? '';
   const [isActive, setIsActive] = useState<boolean>(false)
 
   useEffect(() => {
@@ -62,7 +63,7 @@ export default function Header() {
           </Link>
           <div className="w-0.5 h-5 bg-warm"></div>
           <Link href={'/contact'} className="hover1 flex items-center justify-center px-2 py-6 cursor-pointer">
-            <div className={`${pathname === '/contact' ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
+            <div className={`${pathname.startsWith('/contact') ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[94%]">YHTEYSTIEDOT</p>
                 <p className="font-bold relative">YHTEYSTIEDOT</p>
@@ -71,7 +72,7 @@ export default function Header() {
           </Link>
           <div className="w-0.5 h-5 bg-warm"></div>
           <Link href={'/yrityksille'} className="hover1 flex items-center justify-center pl-2 pr-8 py-6 cursor-pointer">
-            <div className={`${pathname === '/yrityksille' ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
+            <div className={`${pathname.startsWith('/yrityksille') ? 'dot' : ''} overflow-hidden flex items-center justify-center`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[90%]">YRITYKSILLE</p>
                 <p className="font-bold relative">YRITYKSILLE</p>

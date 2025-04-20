@@ -57,7 +57,7 @@ export default function Yrityksille() {
                     <div className="font-bold text-lg uppercase text-center">
                         <p>Economy paketti 2h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">375€ + ALV 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">375€ + ALV 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -86,7 +86,7 @@ export default function Yrityksille() {
                     <div className="font-bold text-lg uppercase text-center">
                         <p>Business paketti 2h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">457€ + alv 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">457€ + alv 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -119,7 +119,7 @@ export default function Yrityksille() {
                     <div className="font-bold text-lg text-center uppercase">
                         <p>First-class paketti 2,5h max 10 hlö</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">487€ + alv 14%</p>
+                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">487€ + alv 14%</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>
@@ -148,7 +148,7 @@ export default function Yrityksille() {
                     <div className="font-bold text-lg text-center uppercase">
                         <p>Fasten your seatbelt 15min</p>
                     </div>
-                    <p className="font-black px-3 py-1 text-sm bg-green text-white rounded-full">KYSY HINTAA</p>
+                    <p className="font-black px-3 py-1 text-sm bg-shallow text-warm rounded-full">KYSY HINTAA</p>
                     <div className="flex flex-col gap-1">
                         <div className="flex items-start">
                             <div className="absolute bg-black w-2 h-2 mt-2"></div>

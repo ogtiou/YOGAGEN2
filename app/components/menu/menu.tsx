@@ -7,7 +7,8 @@ import { usePathname } from "next/navigation";
 
 export default function Menu({ setIsActive }: {setIsActive: (isActive: boolean) => void}) {
 
-  const pathname = usePathname()
+  // const pathname = usePathname()
+  const pathname = usePathname() ?? '';
 
   return(
     <div className="overflow-hidden">
@@ -38,16 +39,16 @@ export default function Menu({ setIsActive }: {setIsActive: (isActive: boolean) 
               </div>
             </div>
           </Link>
-          <Link onClick={() => setIsActive(false)} href={'contact'} className="hover1 flex items-center justify-center cursor-pointer">
-            <div className={`${pathname === '/contact' ? 'left-dot' : ''} overflow-hidden flex items-center justify-center relative px-5`}>
+          <Link onClick={() => setIsActive(false)} href={'/contact'} className="hover1 flex items-center justify-center cursor-pointer">
+            <div className={`${pathname.startsWith('/contact') ? 'left-dot' : ''} overflow-hidden flex items-center justify-center relative px-5`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[94%]">YHTEYSTIEDOT</p>
                 <p className="font-bold relative">YHTEYSTIEDOT</p>
               </div>
             </div>
           </Link>
-          <Link onClick={() => setIsActive(false)} href={'yrityksille'} className="hover1 flex items-center justify-center cursor-pointer">
-            <div className={`${pathname === '/yrityksille' ? 'left-dot' : ''} overflow-hidden flex items-center justify-center relative px-5`}>
+          <Link onClick={() => setIsActive(false)} href={'/yrityksille'} className="hover1 flex items-center justify-center cursor-pointer">
+            <div className={`${pathname.startsWith('/yrityksille') ? 'left-dot' : ''} overflow-hidden flex items-center justify-center relative px-5`}>
               <div className="hover1-go relative leading-tight">
                 <p className="font-bold absolute translate-y-[90%]">YRITYKSILLE</p>
                 <p className="font-bold relative">YRITYKSILLE</p>
