@@ -63,13 +63,13 @@ export default function Home() {
           <p className="relative text-[#000000d7] font-sans font-semibold text-xl lg:text-2xl 3xl:text-3xl text-center uppercase">studiolla on kaikki tarvittavat välineet</p>
         </div>
         <div className="flex h-auto items-center flex-col lg:flex-row gap-8 mx-2">
-          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+          <motion.div variants={enter} initial="hidden" whileInView="show" viewport={{ once: true }} className="">
             <Image src={studio2} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </motion.div>
-          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+          <motion.div variants={enter} initial="hidden" whileInView="show" viewport={{ once: true }} className="">
             <Image src={studio1} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </motion.div>
-          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+          <motion.div variants={enter} initial="hidden" whileInView="show" viewport={{ once: true }} className="">
             <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </motion.div>
         </div>

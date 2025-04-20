@@ -28,7 +28,7 @@ export const items: Variants = {
 
 export const enter: Variants = {
     hidden: {
-        filter: 'blur(0.2rem)',
+        filter: 'blur(0.3rem)',
         opacity: 0,
         y: "1rem",
         transition: {...transition}
@@ -37,6 +37,6 @@ export const enter: Variants = {
         filter: 'blur(0rem)',
         opacity: 1,
         y: "0rem",
-        transition: {...transition, duration: 1, delay: 0.05}
+        transition: {...transition, duration: 1}
     }
 }
