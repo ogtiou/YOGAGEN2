@@ -11,7 +11,7 @@ export default function Menu({ setIsActive }: {setIsActive: (isActive: boolean) 
 
   return(
     <div className="overflow-hidden">
-      <motion.div variants={menu} initial="closed" animate="open" exit='closed' className="w-full h-screen fixed top-0 left-0 bg-warm z-30 flex
+      <motion.div variants={menu} initial="closed" animate="open" exit='closed' className="w-full h-dvh fixed top-0 left-0 bg-warm z-30 flex
       items-center justify-center lg:hidden text-shallow backdrop-blur-lg">
         <motion.div variants={items} initial="closed" animate="open" exit='closed' className="flex flex-col items-center justify-center text-4xl gap-4">
           <Link onClick={() => setIsActive(false)} href={'/'} className="hover1 flex items-center justify-center cursor-pointer">
