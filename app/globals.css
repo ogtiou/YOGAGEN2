@@ -102,6 +102,8 @@
   }
 }
 
+@custom-variant hover (&:hover);
+
 /* animations */
 .button1 {
   @apply ease-[cubic-bezier(0.31,0.22,0,0.99)] transition-all duration-300 will-change-transform;
