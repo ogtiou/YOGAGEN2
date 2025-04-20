@@ -180,7 +180,7 @@ export default function Yrityksille() {
                         juuri sellaisina kuin olette!
                     </p>
                 </div>
-                <Link href={'contact'} className="font-sans text-[1rem] leading-normal uppercase font-bold 
+                <Link href={'/contact'} className="font-sans text-[1rem] leading-normal uppercase font-bold 
                 text-center bg-black text-warm rounded-2xl px-6 py-3 button1 mt-8 hover3">
                     {/* ota yhteyttä */}
                     <div className="flex items-center justify-center font-bold text text-warm">

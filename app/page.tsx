@@ -6,10 +6,12 @@ import studio3 from "@/public/images/IMG_9275.webp"
 import Link from "next/link";
 import Footer from "./components/footer/footer";
 import { CalendarClock } from "lucide-react";
+import Launch from "./components/launch/launch";
 
 export default function Home() {
   return (
     <div className="overflow-hidden">
+      <Launch/>
       {/* page 1 */}
       <div className="w-full h-screen flex items-center justify-center overflow-hidden bg-warm relative">
         {/* <video playsInline autoPlay muted loop className="absolute w-full h-full object-cover bg-[#252c20]">
