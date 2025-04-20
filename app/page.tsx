@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import img1 from "@/public/images/CarolinaFoto (2 of 2) 2-2.webp"
 import studio1 from "@/public/images/IMG_8541 2-2.webp"
@@ -7,6 +8,8 @@ import Link from "next/link";
 import Footer from "./components/footer/footer";
 import { CalendarClock } from "lucide-react";
 import Launch from "./components/launch/launch";
+import { motion } from "motion/react";
+import { enter } from "./anim";
 
 export default function Home() {
   return (
@@ -60,9 +63,15 @@ export default function Home() {
           <p className="relative text-[#000000d7] font-sans font-semibold text-xl lg:text-2xl 3xl:text-3xl text-center uppercase">studiolla on kaikki tarvittavat välineet</p>
         </div>
         <div className="flex h-auto items-center flex-col lg:flex-row gap-8 mx-2">
-          <Image src={studio2} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
-          <Image src={studio1} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
-          <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+            <Image src={studio2} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </motion.div>
+          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+            <Image src={studio1} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </motion.div>
+          <motion.div variants={enter} initial="hidden" whileInView="show" className="">
+            <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </motion.div>
         </div>
       </div>
       <Footer/>
