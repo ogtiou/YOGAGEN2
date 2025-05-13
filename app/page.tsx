@@ -31,7 +31,7 @@ export default function Home() {
       scrollTrigger: {
         trigger: '.box',
         start: 'top bottom',
-        toggleActions: "play reset play reset",
+        // toggleActions: "play reset play reset",
       },
       ease: CustomEase.create('custom', '0.49,0.01,0.15,0.97'),
       duration: 0.9,
