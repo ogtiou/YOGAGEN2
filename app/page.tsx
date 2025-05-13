@@ -10,8 +10,36 @@ import { CalendarClock } from "lucide-react";
 import Launch from "./components/launch/launch";
 import { motion } from "motion/react";
 import { enter } from "./anim";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { CustomEase } from "gsap/CustomEase";
+
+gsap.registerPlugin(useGSAP,ScrollTrigger, CustomEase);
 
 export default function Home() {
+
+  useGSAP(() => {
+
+    gsap.to('.box', {
+      y: 0,
+      stagger: {
+        each: 0.1,
+        from: 'start'
+      },
+      scrollTrigger: {
+        trigger: '.box',
+        start: 'top bottom',
+        toggleActions: "play reset play reset",
+      },
+      ease: CustomEase.create('custom', '0.49,0.01,0.15,0.97'),
+      duration: 0.9,
+      opacity: 1,
+      filter: 'blur(0rem)'
+    })
+  })
+
   return (
     <div className="overflow-hidden">
       <Launch/>
@@ -62,7 +90,7 @@ export default function Home() {
         <div className="w-auto flex flex-col items-center justify-center gap-8 mt-0 xl:mt-16">
           <p className="relative text-[#000000d7] font-sans font-semibold text-xl lg:text-2xl 3xl:text-3xl text-center uppercase">studiolla on kaikki tarvittavat välineet</p>
         </div>
-        <div className="flex h-auto items-center flex-col lg:flex-row gap-8 mx-2">
+        <div className="flex h-auto items-center flex-col lg:hidden gap-8 mx-2">
           <motion.div variants={enter} initial="hidden" whileInView="show" viewport={{ once: true }} className="">
             <Image src={studio2} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </motion.div>
@@ -72,6 +100,17 @@ export default function Home() {
           <motion.div variants={enter} initial="hidden" whileInView="show" viewport={{ once: true }} className="">
             <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </motion.div>
+        </div>
+        <div className="h-auto items-center hidden lg:flex gap-8 mx-2">
+          <div className="box opacity-0 translate-y-[2rem]">
+            <Image src={studio2} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </div>
+          <div className="box opacity-0 translate-y-[2rem]">
+            <Image src={studio1} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </div>
+          <div className="box opacity-0 translate-y-[2rem]">
+            <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
+          </div>
         </div>
       </div>
       <Footer/>
