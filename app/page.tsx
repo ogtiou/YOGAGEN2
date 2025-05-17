@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import img1 from "@/public/images/CarolinaFoto (2 of 2) 2-2.webp"
-import studio1 from "@/public/images/IMG_8541 2-2.webp"
+import studio1 from "@/public/images/img5.webp"
 import studio2 from "@/public/images/img3.webp"
 import studio3 from "@/public/images/IMG_9275.webp"
 import Link from "next/link";
@@ -13,15 +13,15 @@ import { enter } from "./anim";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
     
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { CustomEase } from "gsap/CustomEase";
+import { ScrollTrigger } from "gsap/all";
+import { CustomEase } from "gsap/all";
 
-gsap.registerPlugin(useGSAP,ScrollTrigger, CustomEase);
+gsap.registerPlugin(useGSAP,ScrollTrigger,CustomEase);
 
 export default function Home() {
 
   useGSAP(() => {
-
+    
     gsap.to('.box', {
       y: 0,
       stagger: {
@@ -44,7 +44,7 @@ export default function Home() {
     <div className="overflow-hidden">
       <Launch/>
       {/* page 1 */}
-      <div className="w-full h-screen flex items-center justify-center overflow-hidden bg-warm relative">
+      <div className="w-full h-screen flex items-center justify-center overflow-hidden bg-warm relative z-[1]">
         {/* <video playsInline autoPlay muted loop className="absolute w-full h-full object-cover bg-[#252c20]">
           <source src="videos/yogavid.webm" type="video/webm"/>
           <source src="videos/yogavid.mp4" type="video/mp4"/>
@@ -86,7 +86,7 @@ export default function Home() {
       </div>
       {/* page 2 */}
       <div className="w-full h-auto xl:h-screen bg-warm flex items-center justify-start flex-col overflow-hidden 
-      gap-8 my-8 xl:my-0 xl:gap-16">
+      gap-8 my-8 xl:my-0 xl:gap-16 z-[1]">
         <div className="w-auto flex flex-col items-center justify-center gap-8 mt-0 xl:mt-16">
           <p className="relative text-[#000000d7] font-sans font-semibold text-xl lg:text-2xl 3xl:text-3xl text-center uppercase">studiolla on kaikki tarvittavat välineet</p>
         </div>
