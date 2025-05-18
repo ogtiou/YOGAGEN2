@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import img1 from "@/public/images/CarolinaFoto (2 of 2) 2-2.webp"
+import img1 from "@/public/images/CarolinaFoto (2 of 2)-3.webp"
 import studio1 from "@/public/images/img5.webp"
 import studio2 from "@/public/images/img3.webp"
 import studio3 from "@/public/images/IMG_9275.webp"
