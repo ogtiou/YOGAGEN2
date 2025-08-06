@@ -19,7 +19,7 @@ export default function Contact() {
                 </div>
               </div>
             </a>
-            <a href={'mailto:rajusanna@gmail.com'} className="hover2 flex items-center justify-center cursor-pointer">
+            <a href={'mailto:rajusanna7@gmail.com'} className="hover2 flex items-center justify-center cursor-pointer">
               <div className="overflow-hidden flex items-center justify-center">
                 <div className="hover2-go relative leading-tight">
                   <p className="absolute translate-y-[100%]">rajusanna7@gmail.com</p>
