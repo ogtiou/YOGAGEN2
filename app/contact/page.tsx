@@ -44,6 +44,7 @@ export default function Contact() {
                 </div>
               </div>
             </a>
+            <p className="pointer-events-none select-none">Y-tunnus: 3221449-2</p>
           </div>
         </div>
         <Footer2/>

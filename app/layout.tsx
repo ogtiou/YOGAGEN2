@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header/header";
+import Alert from "./components/alert/alert";
 
 
 const geistSans = Geist({
@@ -19,6 +21,10 @@ export const metadata: Metadata = {
   description: "YogaS7",
 };
 
+export const viewport: Viewport = {
+  themeColor: 'black',
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,6 +35,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <Header/>
+        <Alert/>
       </body>
     </html>
   );
