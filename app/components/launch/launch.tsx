@@ -59,8 +59,8 @@ export default function Launch() {
         <div className="w-full h-dvh fixed bg-warm flex items-center justify-center z-[200]" ref={overlay}>
             <div className="font-gunsan text-[6rem] md:text-[7.5rem] lg:text-[9rem] xl:text-[12rem] 3xl:text-[25rem] flex items-center justify-center flex-col
             leading-[60%] text-shallow pointer-events-none select-none blur-lg opacity-0" ref={text}>
-            <p className="translate-x-[-6.5%]">yogas7</p>
-            <p className="translate-x-[6.5%]">studio</p>
+            <p className="">yogas7</p>
+            {/* <p className="translate-x-[6.5%]">studio</p> */}
           </div>
         </div>
     </div>

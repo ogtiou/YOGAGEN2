@@ -56,8 +56,8 @@ export default function Home() {
         <div className="relative flex items-center justify-center flex-col gap-3">
           <div className="font-gunsan text-[6rem] md:text-[7.5rem] lg:text-[9rem] xl:text-[12rem] 3xl:text-[25rem] flex items-center justify-center flex-col
         leading-[60%] text-warm pointer-events-none select-none">
-            <p className="translate-x-[-6.5%]">yogas7</p>
-            <p className="translate-x-[6.5%]">studio</p>
+            <p className="">yogas7</p>
+            {/* <p className="translate-x-[6.5%]">studio</p> */}
           </div>
           <div className="flex items-center justify-center gap-1 md:gap-2 font-black text-warm pointer-events-none select-none text-[0.7rem] xl:text-base">
             <p className="font-sans uppercase text-center">JOOGA</p>
@@ -85,7 +85,7 @@ export default function Home() {
         </div> */}
       </div>
       {/* page 2 */}
-      <div className="w-full h-auto xl:h-screen bg-warm flex items-center justify-start flex-col overflow-hidden 
+      {/* <div className="w-full h-auto xl:h-screen bg-warm flex items-center justify-start flex-col overflow-hidden 
       gap-8 my-8 xl:my-0 xl:gap-16 z-[1]">
         <div className="w-auto flex flex-col items-center justify-center gap-8 mt-0 xl:mt-16">
           <p className="relative text-[#000000d7] font-sans font-semibold text-xl lg:text-2xl 3xl:text-3xl text-center uppercase">studiolla on kaikki tarvittavat välineet</p>
@@ -112,7 +112,7 @@ export default function Home() {
             <Image src={studio3} alt="img" className="rounded-xl xl:rounded-none w-[30rem] lg:w-[18rem] xl:w-[22rem] 2xl:w-[30rem] 3xl:w-[45rem]"/>
           </div>
         </div>
-      </div>
+      </div> */}
       <Footer/>
       {/* page 3 */}
       {/* <div className="w-full h-screen bg-warm flex flex-col gap-6 overflow-hidden"></div> */}
