@@ -11,8 +11,7 @@ export default function Footer2() {
           <div className="absolute w-[95%] h-0.5 bg-black"></div>
           <div className="w-full flex items-center justify-center font-bold text-xs uppercase">
             <div className="absolute left-0 flex items-start flex-col mb-8 sm:mb-0 pl-5 lg:pl-12">
-              <p>Särkiniementie 5</p>
-              <p>Sisäänkäynti 5A rappu B, 5krs</p>
+              <p>Itälahdenkatu 20 B 3 krs</p>
             </div>
             <div className="absolute bottom-0 mb-7 lg:mb-0 lg:relative lg:bottom-auto">&copy; {currentYear}, &copy; YOGAS7, &reg; ALL RIGHTS RESERVED</div>
             <div className="absolute right-0 flex items-end flex-col mb-8 sm:mb-0 pr-5 lg:pr-12 gap-0.5">
