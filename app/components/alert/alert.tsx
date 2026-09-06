@@ -15,7 +15,7 @@ export default function Alert() {
               <div className="flex flex-col items-start">
                 <p className="font-semibold text-sm md:text-base select-none pl-1">
                   {/* Alkaen <span className="font-black">1.3.2026</span> Yoga S7 tunnit pidetään Yoga Club tiloissa Veneentekijäntie 18 B 2. Nähdään matolla */}
-                  Viikkotunnit toistaiseksi peruttu.
+                  Zoom Pilates tunnit varattavissa 
                 </p>
                 {/* <p className="pl-1 text-sm md:text-base">
                   Uudella studiolla käy vain uudet 2026 hankitut kortit.
